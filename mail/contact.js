@@ -15,12 +15,12 @@ $(function () {
             $this.prop("disabled", true);
 
             $.ajax({
-                url: "contact.php",
+                url: "https://formsubmit.co/karthikpar@protonmail.com",
                 type: "POST",
                 data: {
                     name: name,
-                    email: email,
-                    subject: subject,
+                    // email: email,
+                    // subject: subject,
                     message: message
                 },
                 cache: false,
