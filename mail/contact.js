@@ -19,8 +19,8 @@ $(function () {
                 type: "POST",
                 data: {
                     name: name,
-                    // email: email,
-                    // subject: subject,
+                    email: email,
+                    subject: subject,
                     message: message
                 },
                 cache: false,
