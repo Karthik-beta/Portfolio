@@ -10021,6 +10021,20 @@ h6,
 
 .skeleton {
   background-color: #f2f2f2;
+  min-height: 200px; /* Set a minimum height for the skeleton */
+  animation: skeleton 1s ease-in-out infinite; /* Set the animation */
+}
+
+@keyframes skeleton-loading {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .skeleton-text {
