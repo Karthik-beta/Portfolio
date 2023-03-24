@@ -134,4 +134,32 @@ const observer = lozad('.lozad', {
   });
   
   observer.observe();
+
+// window.onload = function() {
+//     var img = document.createElement('img');
+//     img.src = 'path/to/image.jpg';
+//     img.onload = function() {
+//       document.getElementById('myDiv').appendChild(img);
+//       img.style.display = 'block';
+//     }
+// }
   
+
+
+window.addEventListener('load', function() {
+    const skeletons = document.querySelectorAll('.skeleton');
+
+    skeletons.forEach(skeleton => {
+        skeleton.addEventListener('load', function() {
+            skeleton.classList.remove('skeleton');
+        });
+    });
+
+    const skeletonTexts = document.querySelectorAll('.skeleton-text');
+
+    skeletonTexts.forEach(skeletonText => {
+        skeletonText.addEventListener('load', function() {
+            skeletonText.classList.remove('skeleton-text');
+        });
+    });
+});
