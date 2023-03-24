@@ -128,3 +128,10 @@
     
 })(jQuery);
 
+const observer = lozad('.lozad', {
+    rootMargin: '50px 0px', // Apply a 50px margin to the viewport
+    threshold: 0.1 // Load elements when they are 10% visible
+  });
+  
+  observer.observe();
+  
