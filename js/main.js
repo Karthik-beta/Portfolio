@@ -102,6 +102,19 @@
         portfolioIsotope.isotope({filter: $(this).data('filter')});
     });
     
+    var blogIsotope = $('#blog .row').isotope({
+        itemSelector: '.col-lg-4',
+        layoutMode: 'masonry'
+    });
+    
+    $('#blog-flters li').on('click', function() {
+        $('#blog-flters li').removeClass('active');
+        $(this).addClass('active');
+    
+        blogIsotope.isotope({ filter: $(this).data('filter') });
+    });
+
+
     
     // Back to top button
     $(window).scroll(function () {
