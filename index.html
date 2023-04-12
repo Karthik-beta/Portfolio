@@ -33,7 +33,7 @@
 
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2EQ3XFJ8CV"></script>
-<script>
+<script type="text/partytown">
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
@@ -41,9 +41,26 @@
   gtag('config', 'G-2EQ3XFJ8CV');
 </script>
 
+
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
+
+    <script>
+        partytown = {
+          forward: ['dataLayer.push'],
+        };
+    </script>
+    
+    <script type="module">
+        import { partytownSnippet } from '@builder.io/partytown/integration';
+        const snippetText = partytownSnippet();
+        const el = document.createElement('script');
+        el.innerText = snippetText;
+        document.body.appendChild(el);
+    </script>
+
+
     <!-- Navbar Start -->
     <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
         <a href="index.html" class="navbar-brand ml-lg-3">

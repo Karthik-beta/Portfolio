@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "partytown": "node ./node_modules/@builder.io/partytown/bin/partytown.cjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Karthik-beta/Portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Karthik-beta/Portfolio/issues"
+  },
+  "homepage": "https://github.com/Karthik-beta/Portfolio#readme",
+  "dependencies": {
+    "@builder.io/partytown": "^0.7.6"
+  }
+}
