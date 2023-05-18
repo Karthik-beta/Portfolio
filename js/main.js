@@ -176,3 +176,32 @@ window.addEventListener('load', function() {
         });
     });
 });
+
+
+
+
+function updateExperience() {
+    // Set the desired date (May 2023 in this case)
+    var desiredDate = new Date(2023, 4, 1); // Note: Months are zero-based, so May is represented by 4
+  
+    // Get the current date
+    var currentDate = new Date();
+  
+    // Check if it's the 1st day of the month
+    if (currentDate.getDate() === 1) {
+      // Calculate the difference in months
+      var monthsDiff = (currentDate.getFullYear() - desiredDate.getFullYear()) * 12;
+      monthsDiff += currentDate.getMonth() - desiredDate.getMonth();
+  
+      // Update the experience value in the HTML
+      var experienceValueElement = document.getElementById("experienceValue");
+      experienceValueElement.textContent = monthsDiff + " Months";
+    }
+  }
+  
+  // Call the function initially to set the experience value
+  updateExperience();
+  
+  // Call the function periodically to check if it's the 1st day of the month and update the experience value
+  setInterval(updateExperience, 24 * 60 * 60 * 1000); // Check every 24 hours (1 day)
+  
